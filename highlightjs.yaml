@@ -1,0 +1,12 @@
+# Enable/Disable plugin for the whole site
+enabled: true
+# Enable/Disable plugin for certain pages
+active: true
+
+# HighlightJS includes a few languages by default,
+# see the [download page](http://highlightjs.org/download) for details.
+# If you need to use additional languages, list them below.
+# See [CDN](http://cdnjs.com/libraries/highlight.js) for exact name.
+languages:
+  - swift
+  - tex

@@ -1,0 +1,43 @@
+name: HighlightJS
+version: 0.1
+description: "A simple plugin to add the JavaScript framework [HighlightJS](http://highlightjs.org) to [Grav](http://github.com/getgrav/grav)."
+author:
+  name: Simon Christmann
+  email: simon@christmann.email
+  url: http://simon-christmann.de
+homepage: http://github.com/dersimn/grav-plugin-highlightjs
+keywords: highlightjs, plugin, code, syntax-hightlighter
+license: BSD
+
+form:
+  validation: strict
+  fields:
+    enabled:
+      type: toggle
+      label: Plugin Status
+      hightlight: 1
+      default: 0
+      options:
+        1: Enabled
+        0: Disabled
+      validate:
+        type: bool
+
+    active:
+      type: toggle
+      label: Active
+      hightlight: 1
+      default: 0
+      options:
+        1: Enabled
+        0: Disabled
+      validate:
+        type: bool
+      help: Activate on all pages. You can override this setting on a page basis
+
+    languages:
+        type: array
+        label: Languages
+        help: "Additional languages"
+        value_only: true
+        placeholder_value: "swift"
